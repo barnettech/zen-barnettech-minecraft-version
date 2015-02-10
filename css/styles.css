@@ -1,0 +1,145 @@
+/**
+ * @file
+ * Styles are organized using the SMACSS technique. @see http://smacss.com/book/
+ *
+ * When you turn on CSS aggregation at admin/config/development/performance, all
+ * of these @include files will be combined into a single file.
+ */
+
+/* HTML element (SMACSS base) rules */
+@import "normalize.css";
+
+/* Layout rules */
+@import "layouts/responsive.css";
+
+/* Component (SMACSS module) rules */
+@import "components/misc.css";
+/* Optionally, add your own components here. */
+@import "print.css";
+
+/* SMACSS theme rules */
+/* @import "theme-A.css"; */
+/* @import "theme-B.css"; */
+
+/*#container {
+  opacity: 1;
+  height: 100%;
+left: 0;
+width: 100%;
+z-index: -1;
+}*/
+
+#block-block-6 {
+    padding: 5px;
+
+}
+
+#logo img {
+    vertical-align: bottom;
+    height: 75px;
+    float: left;
+    margin-top: 15px;
+}
+
+#site-name a:link, #site-name a:visited {
+    <!--color: #F8F8FF;-->
+    color: #D02200;
+    text-decoration: none;
+    padding-left: 15px;
+    float: left;
+}
+
+#container {
+    background: url("images/nature_wallpaper-normal-greyscale.jpg") repeat scroll 0 0 transparent;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.block, .sidebar {
+    background-color: #F4F4F4;
+    border-width: 1px;
+    margin: 0 0 15px;
+    border-radius: 15px;
+}
+
+#content, #footer {
+    background: rgb(0, 0, 0);
+    background: rgba(248, 248, 248, 0.9);
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    _display: inline;
+    _overflow: hidden;
+    _overflow-y: visible;
+}
+
+.sidebar-first #content {
+    width: 70%;
+    margin-left: 22%;
+    margin-right: -100%;
+    padding: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+}
+
+#secondary-menu{
+    float: right;
+}
+
+#secondary-menu a{
+    color: white;
+}
+
+#main {
+    padding-top: 3em;
+    position: relative;
+    margin-left: 100px;
+}
+
+.field-type-taxonomy-term-reference {
+    display: none;
+}
+
+pre {
+    background: #eee;
+    padding: 10px;
+    border: 2px solid grey;
+    overflow: hidden;
+    margin: 0 0 15px 0;
+    width: 563px;
+    font-family: Courier, Monospace;
+}
+
+@media only screen
+and (min-width : 321px)
+and (max-width: 1000px) {
+    #main {
+        padding-top: 3em;
+        position: relative;
+        margin-left: 0px;
+    }
+    .sidebar-first #content {
+        width: 100%;
+        margin-left: 0%;
+        margin-right: 0%;
+        padding: 15px;
+        -moz-border-radius: 15px;
+        border-radius: 15px;
+    }
+    pre {
+        background: #eee;
+        padding: 10px;
+        border: 2px solid grey;
+        overflow: hidden;
+        margin: 0 0 15px 0;
+        width: 90%;
+        font-family: Courier, Monospace;
+    }
+
+}
