@@ -41,9 +41,9 @@ z-index: -1;
     margin-top: 15px;
 }
 
-#site-name a:link, #site-name a:visited {
+#page #site-name a:link, #page #site-name a:visited {
     <!--color: #F8F8FF;-->
-    color: #D02200;
+    color: #d02200;
     text-decoration: none;
     padding-left: 15px;
     float: left;

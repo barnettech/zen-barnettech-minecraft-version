@@ -404,7 +404,7 @@
 
 				}
 
-				var texture = THREE.ImageUtils.loadTexture( 'sites/default/files/textures/minecraft/atlas.png' );
+				var texture = THREE.ImageUtils.loadTexture( '/sites/default/files/textures/minecraft/atlas.png' );
 				texture.magFilter = THREE.NearestFilter;
 				texture.minFilter = THREE.LinearMipMapLinearFilter;
 
