@@ -1,26 +1,16 @@
-/**
- * @file
- * A JavaScript file for the theme.
- *
- * In order for this JavaScript to be loaded on pages, see the instructions in
- * the README.txt next to this file.
- */
+(function($) {
+    $(document).ready(function() {
+      $( ".pause-button" ).click(function() {
+        $(".pause-button").hide();
+        $(".play-button").show();
+        $('canvas').toggle();
+      });
+      $( ".play-button" ).click(function() {
+        $(".pause-button").show();
+        $(".play-button").hide();
+        $('canvas').toggle();
+      });
 
-// JavaScript should be made compatible with libraries other than jQuery by
-// wrapping it with an "anonymous closure". See:
-// - https://drupal.org/node/1446420
-// - http://www.adequatelygood.com/2010/3/JavaScript-Module-Pattern-In-Depth
-(function ($, Drupal, window, document, undefined) {
+    });
+})(jQuery);
 
-
-// To understand behaviors, see https://drupal.org/node/756722#behaviors
-Drupal.behaviors.my_custom_behavior = {
-  attach: function(context, settings) {
-
-    // Place your code here.
-
-  }
-};
-
-
-})(jQuery, Drupal, this, this.document);

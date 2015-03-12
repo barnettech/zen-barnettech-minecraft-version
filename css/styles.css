@@ -119,6 +119,19 @@ pre {
     font-family: Courier, Monospace;
 }
 
+.pause-button {
+  float: right;
+  height: 100px;
+  width: 100px;
+}
+
+.play-button {
+  float: right;
+  display: none;
+  height: 70px;
+  width: 70px;
+}
+
 @media only screen
 and (min-width : 321px)
 and (max-width: 1000px) {
