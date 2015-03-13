@@ -85,8 +85,8 @@
           <h1 id="site-name">
             <a href="<?php print $front_page; ?>" title="<?php //print t('Home'); ?>" rel="home"><span><?php print $site_name; ?></span></a>
           </h1>
-          <div class='pause-button'><img src="http://barnettechet:8888/sites/default/files/pause_button.png" alt=""></div>
-          <div class='play-button'><img src="http://barnettechet:8888/sites/default/files/play_button.png" alt=""></div>
+          <div class='pause-button'><img src="http://barnettechet:8888/sites/all/themes/zen-barnettech/images/pause_button.png" alt=""></div>
+          <div class='play-button'><img src="http://barnettechet:8888/sites/all/themes/zen-barnettech/images//play_button.png" alt=""></div>
 
           <!--<div class='pause-button'></div>-->
 
