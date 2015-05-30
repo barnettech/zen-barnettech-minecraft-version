@@ -221,7 +221,7 @@
 				controls = new THREE.FirstPersonControls( camera );
 
 				controls.movementSpeed = 1000;
-				controls.lookSpeed = 0.125;
+				controls.lookSpeed = 0;
 				controls.lookVertical = true;
 				controls.constrainVertical = true;
 				controls.verticalMin = 1.1;
